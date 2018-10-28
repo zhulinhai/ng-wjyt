@@ -5,26 +5,26 @@
     </div>
     <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
       <li nz-menu-item>
-        <span title href="/home"><i nz-icon type="home"></i><span class="nav-text">首页</span></span>
+        <span title routerLink="/home"><i nz-icon type="home"></i><span class="nav-text">首页</span></span>
       </li>
       <li nz-submenu>
         <span title><i nz-icon type="solution"></i><span class="nav-text">案例作品</span></span>
         <ul>
-          <li nz-menu-item>视频广告</li>
-          <li nz-menu-item>H5</li>
-          <li nz-menu-item>3D全景汽车</li>
-          <li nz-menu-item>平面设计</li>
+          <li nz-menu-item [routerLink]="['/case/video']">视频广告</li>
+          <li nz-menu-item [routerLink]="['/case/h5']">H5</li>
+          <li nz-menu-item [routerLink]="['/case/virtual']">3D全景汽车</li>
+          <li nz-menu-item [routerLink]="['/case/ui']">平面设计</li>
         </ul>
       </li>
       <li nz-submenu>
         <span title><i nz-icon type="team"></i><span class="nav-text">网际云通</span></span>
         <ul>
-          <li nz-menu-item>公司业务</li>
-          <li nz-menu-item>主营业务</li>
-          <li nz-menu-item>影视设备</li>
+          <li nz-menu-item [routerLink]="['/company/intro']">公司业务</li>
+          <li nz-menu-item [routerLink]="['/company/maintance']">主营业务</li>
+          <li nz-menu-item [routerLink]="['/company/device']">影视设备</li>
         </ul>
       </li>
-      <li nz-menu-item><span><i nz-icon type="phone" theme="outline"></i><span class="nav-text">联系我们</span></span></li>
+      <li nz-menu-item routerLink="/contact"><span href="/contact"><i nz-icon type="phone" theme="outline"></i><span class="nav-text">联系我们</span></span></li>
     </ul>
   </nz-sider>
   <nz-layout style="margin-left: 200px">

@@ -130,5 +130,10 @@
       }
     }
   },
-  "defaultProject": "ng-wjyt"
+  "defaultProject": "ng-wjyt",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
