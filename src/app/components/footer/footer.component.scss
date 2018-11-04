@@ -1,0 +1,30 @@
+#footer {
+    .contact-us {
+        padding: 30px 0;
+        .linkus {
+            margin-left: 20px;
+            width: auto;
+            height: 80px;
+        }
+        .mobile {
+            margin-top: 40px;
+            margin-left: 20px;
+            font-size: 20px;
+            height: 30px;
+            line-height: 30px;
+            font-style: italic;
+            background: url("../../../assets/icon-phone.png") no-repeat 0 center;
+            padding-left: 40px;
+        }
+        .address {
+            margin-left: 20px;
+            font-size: 12px;
+        }
+    }
+    .footer-bottom {
+        background-color: #6F7071;
+        color: #D1D2D3;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}

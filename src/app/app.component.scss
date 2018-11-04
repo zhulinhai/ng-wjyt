@@ -1,18 +1,19 @@
 :host ::ng-deep .trigger {
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 24px;
-    cursor: pointer;
-    transition: color .3s;
-  }
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
 
-  :host ::ng-deep .trigger:hover {
-    color: #1890ff;
-  }
+:host ::ng-deep .trigger:hover {
+  color: #1890ff;
+}
 
-  :host ::ng-deep .logo {
-    height: 70px;
-    background: url('../assets/logo.png') no-repeat center;
-    background-size: 46px 63px;
-    margin: 16px;
-  }
+:host ::ng-deep .logo {
+  display: block;
+  height: 90px;
+  background: url('../assets/logo.png') no-repeat center;
+  background-size: 60px auto;
+  margin: 30px auto;
+}

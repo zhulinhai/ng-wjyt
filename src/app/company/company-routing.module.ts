@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { ComponyComponent } from './compony.component';
 import { IntroComponent } from './intro/intro.component';
@@ -19,7 +20,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    RouterModule.forChild(routes),
+    CommonModule
+  ],
   exports: [RouterModule],
   declarations: [
     IntroComponent,

@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { CompanyModule } from './company/company.module';
 import { CaseModule } from './case/case.module';
+import { FooterComponent } from './components';
 
 registerLocaleData(zh);
 
@@ -21,6 +22,7 @@ registerLocaleData(zh);
     AppComponent,
     HomeComponent,
     ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

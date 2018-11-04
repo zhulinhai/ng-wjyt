@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
+  brandImgs = [];
+
   constructor() { }
 
   ngOnInit() {
+    for (let i = 1; i < 13; i++) {
+      this.brandImgs.push(`../../../assets/31-logo${i}.png`);
+    }
   }
 
 }

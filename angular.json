@@ -28,10 +28,13 @@
               }
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
+              "./node_modules/swiper/dist/css/swiper.css",
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/swiper/dist/js/swiper.min.js"
+            ]
           },
           "configurations": {
             "production": {
