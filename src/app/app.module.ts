@@ -12,8 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { CompanyModule } from './company/company.module';
-import { CaseModule } from './case/case.module';
-import { FooterComponent } from './components';
+import { SharedModule } from './shared.module';
 
 registerLocaleData(zh);
 
@@ -22,7 +21,6 @@ registerLocaleData(zh);
     AppComponent,
     HomeComponent,
     ContactComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +29,7 @@ registerLocaleData(zh);
     HttpClientModule,
     NgZorroAntdModule,
     CompanyModule,
-    CaseModule,
+    SharedModule,
     AppRoutingModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],

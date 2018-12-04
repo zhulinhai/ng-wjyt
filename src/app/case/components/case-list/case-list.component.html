@@ -1,0 +1,19 @@
+<div class="grid">
+  <ng-container *ngFor="let item of $postObserver | async">
+    <ng-container [ngSwitch]="item.categories[0].slug">
+      <article class="grid-item" *ngSwitchCase="'video'">
+        <div class="coverBox">
+          <img class="btnPlay" src="assets/icon-play.png">
+        </div>
+        <img class="thumbnail" src="{{item.thumbnail_images['full'].url}}" alt="" srcset="">
+      </article>
+      <article *ngSwitchDefault>
+        <div class="coverBox">
+            <img src="assets/icon-click.png">
+            <p>点击查看</p>
+        </div>
+        <img class="thumbnail" src="{{item.thumbnail_images['full'].url}}" alt="" srcset="">
+      </article>
+    </ng-container>
+  </ng-container>
+</div>
